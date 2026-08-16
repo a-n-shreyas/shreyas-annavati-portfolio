@@ -1,11 +1,14 @@
 import Nav from './components/Nav';
-import Hero from './components/Hero';
-import About from './components/About';
-import Experience from './components/Experience';
-import Education from './components/Education';
-import Projects from './components/Projects';
-import Skills from './components/Skills';
-import Contact from './components/Contact';
+import Hero from './sections/Hero';
+import Stats from './sections/Stats';
+import About from './sections/About';
+import Skills from './sections/Skills';
+import Experience from './sections/Experience';
+import Milestones from './sections/Milestones';
+import Education from './sections/Education';
+import Projects from './sections/Projects';
+import Focus from './sections/Focus';
+import Contact from './sections/Contact';
 
 export default function App() {
   return (
@@ -13,11 +16,14 @@ export default function App() {
       <Nav />
       <main>
         <Hero />
+        <Stats />
         <About />
+        <Skills />
         <Experience />
+        <Milestones />
         <Education />
         <Projects />
-        <Skills />
+        <Focus />
         <Contact />
       </main>
     </>
