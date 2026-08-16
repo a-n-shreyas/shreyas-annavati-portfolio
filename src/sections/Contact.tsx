@@ -1,20 +1,20 @@
-import { type FormEvent, useState } from 'react';
+// import { type , useState } from 'react';
 import { Github, Linkedin, Mail } from 'lucide-react';
 import Reveal from '../components/Reveal';
 import SectionHeading from '../components/SectionHeading';
 import { profile } from '../data/profile';
 
 export default function Contact() {
-  const [name, setName] = useState('');
-  const [email, setEmail] = useState('');
-  const [message, setMessage] = useState('');
+  // const [name, setName] = useState('');
+  // const [email, setEmail] = useState('');
+  // const [message, setMessage] = useState('');
 
-  function handleSubmit(e: FormEvent) {
-    e.preventDefault();
-    const subject = encodeURIComponent(`Portfolio contact from ${name || 'a visitor'}`);
-    const body = encodeURIComponent(`${message}\n\n— ${name} (${email})`);
-    window.location.href = `mailto:${profile.email}?subject=${subject}&body=${body}`;
-  }
+  // function handleSubmit(e: FormEvent) {
+  //   e.preventDefault();
+  //   const subject = encodeURIComponent(`Portfolio contact from ${name || 'a visitor'}`);
+  //   const body = encodeURIComponent(`${message}\n\n— ${name} (${email})`);
+  //   window.location.href = `mailto:${profile.email}?subject=${subject}&body=${body}`;
+  // }
 
   return (
     <section id="contact" className="py-24 sm:py-32">
